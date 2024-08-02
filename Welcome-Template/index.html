@@ -53,8 +53,6 @@
       .content {
         display: flex;
         flex-direction: column;
-        /* justify-content: center;
-  align-items: center; */
         gap: 2rem;
       }
       .template-header {
@@ -72,25 +70,18 @@
       }
       .template-receiver-name {
         color: #111;
-
-        /* H6/SemiBold */
         font-size: 1.125rem;
-
         font-weight: 600;
       }
       .template-welcome-message {
         color: rgba(17, 17, 17, 0.9);
-
         font-size: 1rem;
-
         font-weight: 400;
       }
       .editable-content-title {
         color: var(--Neutral-Colors-Dark-2, #0a0a0a);
         font-size: 1rem;
-
         font-weight: 600;
-
         opacity: 0.9;
         margin-bottom: 1.25rem;
       }
@@ -98,16 +89,16 @@
         opacity: 0.9;
         color: var(--Neutral-Colors-Dark-2, rgba(17, 17, 17, 0.9));
         font-size: 1rem;
-
         font-weight: 400;
-
         margin-bottom: 1rem;
+        display: flex;
+        align-items: center;
+        gap: 16px;
       }
       .editable-content-list span {
         color: var(--Neutral-Colors-Dark-2, #0a0a0a);
         font-size: 1rem;
-
-        font-weight: 600;
+        line-height: 20px;
       }
 
       .template-btn {
@@ -247,7 +238,7 @@
           </p>
           <div class="editable-content-list">
             <p>
-              <span style="margin-right: 1rem"
+              <span
                 ><svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="24"
@@ -262,11 +253,14 @@
                   />
                 </svg>
               </span>
-              <span>Exclusive Offers:</span> Enjoy special promotions and
-              discounts available only to our members.
+              <span>
+                <b>Exclusive Offers:</b>
+                Enjoy special promotions and discounts available only to our
+                members.
+              </span>
             </p>
             <p>
-              <span style="margin-right: 1rem"
+              <span
                 ><svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="24"
@@ -281,11 +275,13 @@
                   />
                 </svg>
               </span>
-              <span>Exclusive Offers:</span> Enjoy special promotions and
-              discounts available only to our members.
+              <span>
+                <b>Exclusive Offers:</b> Enjoy special promotions and discounts
+                available only to our members.</span
+              >
             </p>
             <p>
-              <span style="margin-right: 1rem"
+              <span
                 ><svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="24"
@@ -300,8 +296,10 @@
                   />
                 </svg>
               </span>
-              <span>Exclusive Offers:</span> Enjoy special promotions and
-              discounts available only to our members.
+              <span
+                ><b>Exclusive Offers:</b> Enjoy special promotions and discounts
+                available only to our members.</span
+              >
             </p>
           </div>
         </div>
