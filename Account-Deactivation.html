@@ -121,9 +121,6 @@
       align-self: center;
       background: var(--Primary-Color-Primary-Full-500, #f97316);
     }
-    .template-btn:hover {
-      background: var(--Primary-Color-Primary-Full-500, #9c4609);
-    }
     .template-farewell p {
       color: #111;
       font-size: 0.875rem;
@@ -266,7 +263,7 @@
                     <circle cx="5" cy="5.5" r="5" fill="#FDC7A2" />
                   </svg>
                 </span>
-                <span>Account Email:</span> johndoe@gmail.com
+                <span>Account Email:</span> {{email}}
               </p>
               <p>
                 <span style="margin-right: 10px">
@@ -280,7 +277,8 @@
                     <circle cx="5" cy="5.5" r="5" fill="#FDC7A2" />
                   </svg>
                 </span>
-                <span>Last Active:</span> 17th June, 2024 / 11:56pm
+                <span>Last Active:</span> {{lastActiveDate}} /
+                {{lastActiveTime}}
               </p>
               <p>
                 <span style="margin-right: 10px">
@@ -294,7 +292,8 @@
                     <circle cx="5" cy="5.5" r="5" fill="#FDC7A2" />
                   </svg>
                 </span>
-                <span>Deactivation Date:</span> 20th July, 2024 / 11:56pm
+                <span>Deactivation Date:</span> {{deactivationDateDate}} /
+                {{deactivationDateTime}}
               </p>
             </div>
             <p>
@@ -302,7 +301,12 @@
               date. However, if you no longer wish to use your account, no
               further action is needed on your part.
             </p>
-            <button class="template-btn">Access my Account</button>
+            <a
+              href="{{link}}"
+              class="template-btn"
+              style="text-decoration: none; cursor: pointer"
+              >Access my Account</a
+            >
           </div>
         </div>
         <div class="template-farewell">
