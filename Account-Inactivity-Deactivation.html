@@ -132,10 +132,16 @@
       .template-farewell p {
         color: #111;
         font-size: 0.875rem;
-
         font-weight: 500;
-
         margin-bottom: 0.5rem;
+      }
+
+      .link {
+        color: #f97316;
+        text-decoration: none;
+      }
+      .link:hover {
+        text-decoration: underline;
       }
 
       footer {
@@ -267,7 +273,7 @@
                   <circle cx="5" cy="5.5" r="5" fill="#FDC7A2" />
                 </svg>
               </span>
-              <span>Account Email: </span>johndoe@gmail.com
+              <span>Account Email: </span>{{email}}
             </p>
             <p>
               <span style="margin-right: 10px">
@@ -281,7 +287,7 @@
                   <circle cx="5" cy="5.5" r="5" fill="#FDC7A2" />
                 </svg>
               </span>
-              <span>Last Active:</span> 17th June, 2024 / 11:56pm
+              <span>Last Active:</span> {{lastActiveDate}} / {{lastActiveTime}}
             </p>
             <p>
               <span style="margin-right: 10px">
@@ -295,7 +301,8 @@
                   <circle cx="5" cy="5.5" r="5" fill="#FDC7A2" />
                 </svg>
               </span>
-              <span>Deactivation Date:</span> 20th July, 2024 / 11:56pm
+              <span>Deactivation Date:</span> {{deactivationDateDate}} /
+              {{deactivationDateTime}}
             </p>
           </div>
           <p>
@@ -304,8 +311,17 @@
           </p>
           <p>
             Give us a call at
-            <span style="font-weight: 600">(+234)-456-7890</span> or shoot us an
-            email at <span style="font-weight: 600">support@llaihng.com</span>
+            <span style="font-weight: 600"
+              ><a href="tel:+(+234)-456-7890" class="link"
+                >(+234)-456-7890</a
+              ></span
+            >
+            or shoot us an email at
+            <span style="font-weight: 600"
+              ><a href="mailto:support@llaihng.com" class="link"
+                >support@llaihng.com</a
+              ></span
+            >
           </p>
           <p>We value your membership and would love to have you back.</p>
           <div class="template-farewell">
