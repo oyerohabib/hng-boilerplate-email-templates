@@ -250,7 +250,13 @@
         color: #f97316;
         font-weight: 400;
       }
-
+      .link {
+        color: #f97316;
+        text-decoration: none;
+      }
+      .link:hover {
+        text-decoration: underline;
+      }
       footer {
         background: #f3efef;
         display: flex;
@@ -495,7 +501,7 @@
       <div class="content">
         <section class="payment-confirmation">
           <h2>We have received your payment of</h2>
-          <h3>$400.00</h3>
+          <h3>${{paymentAmount}}</h3>
         </section>
 
         <section class="order-summary">
@@ -503,23 +509,18 @@
           <table>
             <tr>
               <td>Item</td>
-              <td>5</td>
-              <td>$200</td>
-            </tr>
-            <tr>
-              <td>Item</td>
-              <td>3</td>
-              <td>$120</td>
+              <td>{{itemQuantity}}</td>
+              <td>${{itemPrice}}</td>
             </tr>
             <tr>
               <td>VAT</td>
-              <td>10%</td>
-              <td>$32</td>
+              <td>{{vatPercent}}%</td>
+              <td>${{vatPrice}}</td>
             </tr>
             <tr>
               <td>TOTAL</td>
-              <td>100%</td>
-              <td>$352</td>
+              <td>{{totalPercent}}%</td>
+              <td>${{totalPrice}}</td>
             </tr>
           </table>
         </section>
@@ -528,19 +529,19 @@
           <table>
             <tr>
               <td>Amount</td>
-              <td>$352</td>
+              <td>${{totalAmount}}</td>
             </tr>
             <tr>
               <td>Payment Method</td>
-              <td>Mastercard ending in 5429</td>
+              <td>Mastercard ending in {{cardEnding}}</td>
             </tr>
             <tr>
               <td>Reference ID</td>
-              <td>R4558990</td>
+              <td>{{referenceId}}</td>
             </tr>
             <tr>
               <td>Date</td>
-              <td>July 17, 2024</td>
+              <td>{{date}}</td>
             </tr>
           </table>
         </section>
@@ -551,8 +552,12 @@
             <p><b>Have any questions about your order?</b></p>
             <br />
             <p>
-              Give us a call at <b>(+234)-456-7890</b> or Email us at
-              <b>support@llaihng.com</b>
+              Give us a call at
+              <a href="tel: (+234)-456-7890" class="link">(+234)-456-7890</a> or
+              Email us at
+              <a href="mailto:support@llaihng.com" class="link"
+                >support@llaihng.com</a
+              >
             </p>
           </div>
           <div class="template-farewell">

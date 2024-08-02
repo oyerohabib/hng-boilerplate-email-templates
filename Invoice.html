@@ -147,16 +147,22 @@
         border-radius: 0.5rem;
         align-self: center;
         background: var(--Primary-Color-Primary-Full-500, #f97316);
+        display: flex;
+        align-items: center;
       }
       .template-farewell p {
         color: #111;
         font-size: 0.875rem;
-
         font-weight: 500;
-
         margin-bottom: 0.5rem;
       }
-
+      .link {
+        color: #f97316;
+        text-decoration: none;
+      }
+      .link:hover {
+        text-decoration: underline;
+      }
       footer {
         background: #f3efef;
         display: flex;
@@ -246,15 +252,15 @@
               <div class="content">
                 <div>
                   <p class="key">Invoice Number</p>
-                  <p class="value">#EJ78465</p>
+                  <p class="value">{{invoiceNumber}}</p>
                 </div>
                 <div>
                   <p class="key">Date of Issue</p>
-                  <p class="value">July 17, 2024</p>
+                  <p class="value">{{dateOfIssue}}</p>
                 </div>
                 <div>
                   <p class="key">Due Date</p>
-                  <p class="value">July 19, 2024</p>
+                  <p class="value">{{dueDate}}</p>
                 </div>
               </div>
             </div>
@@ -262,24 +268,19 @@
               <p class="title">Order Summary</p>
               <div class="content">
                 <div>
-                  <p class="key">Item</p>
-                  <p class="value">5</p>
-                  <p class="value">$200</p>
-                </div>
-                <div>
-                  <p class="key">Item</p>
-                  <p class="value">3</p>
-                  <p class="value">$120</p>
+                  <p class="key">Item(s)</p>
+                  <p class="value">{{noOfItems}}</p>
+                  <p class="value">${{costOfItems}}</p>
                 </div>
                 <div>
                   <p class="key">VAT</p>
-                  <p class="value">10%</p>
-                  <p class="value">$32</p>
+                  <p class="value">{{vat}}%</p>
+                  <p class="value">${{vatCost}}</p>
                 </div>
                 <div>
                   <p class="key">TOTAL</p>
-                  <p class="value">100%</p>
-                  <p class="value">$352</p>
+                  <p class="value">{{totalPercent}}%</p>
+                  <p class="value">${{totalAmount}}</p>
                 </div>
               </div>
             </div>
@@ -293,35 +294,44 @@
               <div class="content">
                 <div>
                   <p class="key">Amount</p>
-                  <p class="value">$200</p>
+                  <p class="value">${{totalAmount}}</p>
                 </div>
                 <div>
                   <p class="key">Payment Method</p>
-                  <p class="value">Bank</p>
+                  <p class="value">{{paymentMethod}}</p>
                 </div>
                 <div>
                   <p class="key">Bank Name</p>
-                  <p class="value">United Bank of Africa</p>
+                  <p class="value">{{bankName}}</p>
                 </div>
                 <div>
                   <p class="key">Account Number</p>
-                  <p class="value">2108689490</p>
+                  <p class="value">{{accountNumber}}</p>
                 </div>
                 <div>
                   <p class="key">Account Name</p>
-                  <p class="value">John Doe</p>
+                  <p class="value">{{accountName}}</p>
                 </div>
               </div>
             </div>
           </div>
         </div>
 
-        <button class="template-btn">Pay Now</button>
+        <a
+          href="{{linkToPay}}"
+          class="template-btn"
+          style="text-decoration: none; cursor: pointer"
+          >Pay Now</a
+        >
         <div class="template-contact-details">
           <p><span>Have any questions about your order?</span></p>
           <p>
-            Give us a call at <span>(+234)-456-7890</span> or Email us at
-            <span>support@llaihng.com</span>
+            Give us a call at
+            <a href="tel:+(+234)-456-7890" class="link">(+234)-456-7890</a> or
+            Email us at
+            <a href="mailto:support@llaihng.com" class="link"
+              >support@llaihng.com</a
+            >
           </p>
         </div>
 

@@ -1026,17 +1026,18 @@
 
     <div class="expiry-date">
       <p class="text">Your Renewal Date</p>
-      <p class="date">17th September, 2024</p>
+      <p class="date">{{date}}</p>
     </div>
 
     <div class="template-main">
       <div class="content">
         <div class="closing-regards">
           <p>
-            Your subscription for <b>$20.89/Bi-monthly features</b> will
-            automatically renew on 17th September, 2024. To avoid being charged,
-            you should cancel at least a day before the renewal date. To learn
-            more or cancel,
+            Your subscription for
+            <b>${{subscriptionAmount}}/{{subscriptionPlan}}</b> will
+            automatically renew on {{date}}. To avoid being charged, you should
+            cancel at least a day before the renewal date. To learn more or
+            cancel,
             <a href="#" class="link-faq" style="font-weight: 400"
               >review subscription</a
             >.

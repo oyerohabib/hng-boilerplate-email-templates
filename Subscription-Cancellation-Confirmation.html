@@ -409,7 +409,7 @@
                 fill="rgba(249, 115, 22, 0.40)"
               />
             </svg>
-            <b>Subscription ID:&nbsp;</b> 123456
+            <b>Subscription ID:&nbsp;</b> {{subscriptionId}}
           </li>
           <li>
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
@@ -418,7 +418,7 @@
                 fill="rgba(249, 115, 22, 0.40)"
               />
             </svg>
-            <b>Subscription Plan:&nbsp;</b> Bi-monthly Features
+            <b>Subscription Plan:&nbsp;</b> {{subscriptionPlan}}
           </li>
           <li>
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
@@ -427,7 +427,7 @@
                 fill="rgba(249, 115, 22, 0.40)"
               />
             </svg>
-            <b>Cancellation Date:&nbsp;</b> 17th July, 2024
+            <b>Cancellation Date:&nbsp;</b> {{cancellationDate}}
           </li>
         </ul>
 
@@ -449,7 +449,9 @@
           </p>
         </div>
 
-        <a href="#" class="template-btn button-fill">Proceed to Account</a>
+        <a href="{{linkToPay}}" class="template-btn button-fill"
+          >Proceed to Account</a
+        >
         <div class="template-farewell">
           <p>Regards,</p>
           <p>Boilerplate</p>
