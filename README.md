@@ -61,6 +61,12 @@ To run the project in your local environment, follow these steps:
 
 3. Preview the templates by opening the respective files in any browser of your choice.
 
+## Contributing to project
+
+Thank you for considering contributing to the HNG Boilerplate Email Templates! We welcome contributions from the community to help improve and grow the project.
+
+Please note that this project adheres to the [Contributor Covenant Code of Conduct](CONTRIBUTING.md). By participating, you are expected to uphold this code. Please report any unacceptable behavior.
+
 ## License
 
 This project is licensed under the [MIT License](LICENSE).
