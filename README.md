@@ -60,3 +60,7 @@ To run the project in your local environment, follow these steps:
    ```
 
 3. Preview the templates by opening the respective files in any browser of your choice.
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).
