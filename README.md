@@ -1,28 +1,12 @@
-# HNG Boilerplate Email Templates
+# 📧 HNG Boilerplate Email Templates
 
-This repository contains the HNG 12 boilerplate email templates. These templates are part of the Email messaging/Template/SMS (using a background queue) task. You can view the design on [Figma](https://www.figma.com/design/VEItfX6St5NSAqqNHImcxD/HNG-Boilerplate-Designs?node-id=7-8277&m=dev). This project was developed by [@oyerohabib](https://github.com/oyerohabib/) and [@jane-jazzy](jane.ahone.eloundou@gmail.com). There are a total of 20 email templates, including:
+This repository contains the HNG 12 boilerplate email templates. These templates are part of the Email messaging/Template/SMS (using a background queue) task. You can view the design on [Figma](https://www.figma.com/design/VEItfX6St5NSAqqNHImcxD/HNG-Boilerplate-Designs?node-id=7-8277&m=dev). This project was developed by [@oyerohabib](https://github.com/oyerohabib/) and [@jane-jazzy](jane.ahone.eloundou@gmail.com). There are a total of 20 email templates.
 
-- Account-Deactivation.html
-- Account-Inactivity-Deactivation.html
-- Activate-Account.html
-- Activation-Link.html
-- Active-Account.html
-- Email-Complete.html
-- Email-Verification.html
-- Invoice.html
-- New-Activation-Link.html
-- New-Feature-Announcement.html
-- Newsletter.html
-- Password-Reset-Complete-Template.html
-- Payment-Receipt.html
-- README.md
-- Reset-Password-Template.html
-- Subscription-Cancellation-Confirmation.html
-- Subscription-Confirmation.html
-- Subscription-Renewal-Disabled.html
-- Subscription-Renewal-Failed.html
-- Subscription-Renewal-Reminder.html
-- Welcome-Template.html
+## 🔗 Relevant Links
+
+- **Frontend Repository**: [Boilerplate Frontend Repository](https://github.com/hngprojects/hng_boilerplate_nextjs)
+- **Backend Repository**: [Boilerplate Backend Repository](https://github.com/hngprojects/hng_boilerplate_nestjs)
+- **API Documentation**: [Boilerplate API Documentation](https://deployment.api-nestjs.boilerplate.hng.tech/api/docs)
 
 ## 📸 Screenshots
 
