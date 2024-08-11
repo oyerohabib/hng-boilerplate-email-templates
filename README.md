@@ -34,6 +34,8 @@ These templates are part of the general email functionality for the application.
 
 Templates are uploaded through an endpoint and stored on the backend, this can be found in the API docs above. The backend developer can reference these templates by name. Additionally, the templates include dynamic fields like `{{name}}`, `{{email}}`, `{{token}}`, `{{link}}`, which are populated with values passed from the backend.
 
+To learn more about this, you can reach out to the backend developer here - [KINGAJ](https://github.com/King-AJr)
+
 ## 🚦 Running the Project
 
 To run the project in your local environment, follow these steps:
@@ -60,6 +62,6 @@ If you find this project helpful or interesting, please consider giving it a sta
 
 Please note that this project adheres to the [Contributor Covenant Code of Conduct](CONTRIBUTING.md). By participating, you are expected to uphold this code. Please report any unacceptable behavior.
 
-## License
+## 📄 License
 
 This project is licensed under the [MIT License](LICENSE).
