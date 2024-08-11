@@ -10,6 +10,7 @@ This repository contains the HNG 12 boilerplate email templates. These templates
 ## 🔗 Relevant Links
 
 - **Website Link**: [Website Link](https://hng-boilerplate-email-templates.netlify.app/)
+- **Figma Design**: [Figma Design](https://www.figma.com/design/VEItfX6St5NSAqqNHImcxD/HNG-Boilerplate-Designs?node-id=7-8277&m=dev)
 - **Frontend Repository**: [Boilerplate Frontend Repository](https://github.com/hngprojects/hng_boilerplate_nextjs)
 - **Backend Repository**: [Boilerplate Backend Repository](https://github.com/hngprojects/hng_boilerplate_nestjs)
 - **API Documentation**: [Boilerplate API Documentation](https://staging.api-nestjs.boilerplate.hng.tech/api/docs)
